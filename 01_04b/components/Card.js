@@ -43,13 +43,12 @@ const getDate = (imgData) => {
 };
 
 const Card = (imgData) => {
-  //const description = imgData.description;
   const {
     description,
     user: { name },
     created_at: createdDate,
     links: { self },
-  } = imgData; //Line 42 - 47 works the same as line 41
+  } = imgData;
 
   return `
     <figure class="image">
